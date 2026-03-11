@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fero — International Fine Dining in Germany. A Michelin-starred experience of culinary artistry." />
+  <meta name="keywords" content="Fero restaurant, fine dining, Germany, Michelin, international cuisine" />
+  <title>Fero — Fine Dining, Germany</title>
+
+  <!-- Google Fonts: Cormorant Garamond + Raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+  ============================================= -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Fero Restaurant Home">
+        <span class="logo-text">FERO</span>
+        <span class="logo-sub">Fine Dining &middot; Germany</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#wine">Wine</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#takeaway">Takeaway</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#reservations" class="nav-cta">Reserve</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =============================================
+       HERO / HOME
+  ============================================= -->
+  <section id="home" class="hero" aria-label="Hero section">
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1800&auto=format&fit=crop&q=80"
+        alt="Fero Restaurant — elegant fine dining interior"
+        class="hero-img"
+        loading="eager"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-fade">Germany &middot; International Fine Dining</p>
+      <h1 class="hero-title reveal-up">FERO</h1>
+      <p class="hero-tagline reveal-fade">
+        <em>Where every plate is a journey. Where every evening becomes memory.</em>
+      </p>
+      <div class="hero-divider reveal-fade"></div>
+      <a href="#reservations" class="btn btn-light reveal-up">Reserve a Table</a>
+    </div>
+
+    <a href="#menu" class="hero-scroll" aria-label="Scroll to menu">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Scroll</span>
+    </a>
+  </section>
+
+  <!-- =============================================
+       INTRO STRIP
+  ============================================= -->
+  <section class="intro-strip reveal-section">
+    <div class="container">
+      <p class="intro-text">
+        At Fero, the world arrives on your plate. Our kitchen draws from the finest international culinary traditions &mdash; guided by season, rooted in craft, elevated by artistry.
+      </p>
+    </div>
+  </section>
+
+  <!-- =============================================
+       MENU SECTION
+  ============================================= -->
+  <section id="menu" class="section menu-section" aria-label="Menu">
+    <div class="container">
+      <div class="section-header reveal-section">
+        <span class="section-label">The Kitchen</span>
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-subtitle">Crafted from the finest seasonal ingredients, sourced with care and served with passion.</p>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="menu-tabs reveal-section" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" data-tab="starters" role="tab" aria-selected="true">Starters</button>
+        <button class="menu-tab" data-tab="mains" role="tab" aria-selected="false">Main Courses</button>
+        <button class="menu-tab" data-tab="desserts" role="tab" aria-selected="false">Desserts</button>
+        <button class="menu-tab" data-tab="wine-list" role="tab" aria-selected="false">Wine List</button>
+        <button class="menu-tab" data-tab="drinks" role="tab" aria-selected="false">Drinks</button>
+      </div>
+
+      <!-- STARTERS -->
+      <div class="menu-panel active" id="tab-starters" role="tabpanel">
+        <div class="menu-grid">
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Hokkaido Scallop</h3>
+              <span class="dish-price">&euro; 28</span>
+            </div>
+            <p class="dish-desc">Lightly seared Japanese scallop, yuzu beurre blanc, crispy nori, micro shiso</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Foie Gras Torchon</h3>
+              <span class="dish-price">&euro; 34</span>
+            </div>
+            <p class="dish-desc">Classic duck liver torchon, Sauternes gel&eacute;e, brioche toast, fig compote</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Wagyu Beef Tartare</h3>
+              <span class="dish-price">&euro; 26</span>
+            </div>
+            <p class="dish-desc">Hand-cut Wagyu tartare, truffle aioli, caper berries, quail egg, rye croutons</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Burrata di Bufala</h3>
+              <span class="dish-price">&euro; 22</span>
+            </div>
+            <p class="dish-desc">Campanian buffalo burrata, heirloom tomatoes, aged balsamic, basil oil, sea salt</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Lobster Bisque</h3>
+              <span class="dish-price">&euro; 24</span>
+            </div>
+            <p class="dish-desc">Velvety Brittany lobster bisque, cognac cream, poached claw, tarragon foam</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Jerusalem Artichoke</h3>
+              <span class="dish-price">&euro; 18</span>
+            </div>
+            <p class="dish-desc">Roasted and veloute, hazelnut praline, truffle shavings, chervil (V)</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- MAIN COURSES -->
+      <div class="menu-panel" id="tab-mains" role="tabpanel" hidden>
+        <div class="menu-grid">
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Wagyu Tenderloin</h3>
+              <span class="dish-price">&euro; 78</span>
+            </div>
+            <p class="dish-desc">A5 Japanese Wagyu, bone marrow jus, pomme pur&eacute;e, seasonal truffle</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Dover Sole Meuni&egrave;re</h3>
+              <span class="dish-price">&euro; 58</span>
+            </div>
+            <p class="dish-desc">Whole Dover sole, brown butter, capers, lemon, wilted spinach, new potatoes</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Duck &agrave; l'Orange</h3>
+              <span class="dish-price">&euro; 46</span>
+            </div>
+            <p class="dish-desc">Lacquered Challans duck breast, blood orange reduction, celeriac gratin, crispy skin</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Peking-Style Sea Bass</h3>
+              <span class="dish-price">&euro; 52</span>
+            </div>
+            <p class="dish-desc">Wild sea bass, Peking sauce glaze, bok choy, jasmine rice, sesame oil</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Rack of Lamb</h3>
+              <span class="dish-price">&euro; 56</span>
+            </div>
+            <p class="dish-desc">Herb-crusted rack, Proven&ccedil;al vegetables, tapenade jus, rosemary gnocchi</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Wild Mushroom Risotto</h3>
+              <span class="dish-price">&euro; 36</span>
+            </div>
+            <p class="dish-desc">Carnaroli rice, forest mushrooms, aged Parmesan, white truffle oil (V)</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- DESSERTS -->
+      <div class="menu-panel" id="tab-desserts" role="tabpanel" hidden>
+        <div class="menu-grid">
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Valrhona Souffl&eacute;</h3>
+              <span class="dish-price">&euro; 18</span>
+            </div>
+            <p class="dish-desc">Grand Cru dark chocolate souffle, Tahitian vanilla ice cream, praline sauce</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Tarte Tatin</h3>
+              <span class="dish-price">&euro; 16</span>
+            </div>
+            <p class="dish-desc">Caramelised Pink Lady apple tart, Calvados cr&egrave;me fra&icirc;che, Breton butter pastry</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Mille-Feuille</h3>
+              <span class="dish-price">&euro; 17</span>
+            </div>
+            <p class="dish-desc">Caramelised feuilletage, Madagascan vanilla cr&egrave;me diplomate, raspberry coulis</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Cheese Selection</h3>
+              <span class="dish-price">&euro; 22</span>
+            </div>
+            <p class="dish-desc">Five artisan European cheeses, walnut bread, quince paste, honey comb</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Yuzu Panna Cotta</h3>
+              <span class="dish-price">&euro; 15</span>
+            </div>
+            <p class="dish-desc">Japanese citrus panna cotta, mandarin sorbet, crystallised yuzu zest</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Petit Fours</h3>
+              <span class="dish-price">&euro; 12</span>
+            </div>
+            <p class="dish-desc">Chef's selection of seasonal confections, macarons, and handmade truffles</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- WINE LIST -->
+      <div class="menu-panel" id="tab-wine-list" role="tabpanel" hidden>
+        <div class="menu-grid">
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Ch&acirc;teau Margaux 2015</h3>
+              <span class="dish-price">&euro; 480</span>
+            </div>
+            <p class="dish-desc">Bordeaux, France &middot; Premier Grand Cru Class&eacute; &middot; Cabernet Sauvignon, Merlot</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Opus One 2018</h3>
+              <span class="dish-price">&euro; 390</span>
+            </div>
+            <p class="dish-desc">Napa Valley, USA &middot; Bordeaux Blend &middot; Full-bodied, cassis and cedar</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Puligny-Montrachet 2019</h3>
+              <span class="dish-price">&euro; 180</span>
+            </div>
+            <p class="dish-desc">Burgundy, France &middot; Premier Cru &middot; Chardonnay, mineral, floral finish</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Barolo Brunate 2016</h3>
+              <span class="dish-price">&euro; 220</span>
+            </div>
+            <p class="dish-desc">Piedmont, Italy &middot; Nebbiolo &middot; Tar, roses, dark cherry, extraordinary depth</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Cloudy Bay Sauvignon Blanc</h3>
+              <span class="dish-price">&euro; 68</span>
+            </div>
+            <p class="dish-desc">Marlborough, New Zealand &middot; Zesty citrus, tropical fruit, crisp finish</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Riesling GG, Mosel 2020</h3>
+              <span class="dish-price">&euro; 95</span>
+            </div>
+            <p class="dish-desc">Mosel, Germany &middot; Gro&szlig;es Gew&auml;chs &middot; Slate minerality, white peach, precision</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="menu-panel" id="tab-drinks" role="tabpanel" hidden>
+        <div class="menu-grid">
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Fero Signature Cocktail</h3>
+              <span class="dish-price">&euro; 18</span>
+            </div>
+            <p class="dish-desc">Champagne, elderflower liquer, cucumber air, edible gold leaf</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Old Fashioned</h3>
+              <span class="dish-price">&euro; 16</span>
+            </div>
+            <p class="dish-desc">Woodford Reserve, Demerara sugar, Angostura bitters, orange zest</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Still / Sparkling Water</h3>
+              <span class="dish-price">&euro; 6</span>
+            </div>
+            <p class="dish-desc">Acqua Panna Still or S.Pellegrino Sparkling, per 750ml bottle</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Artisan Coffee</h3>
+              <span class="dish-price">&euro; 5</span>
+            </div>
+            <p class="dish-desc">Single-origin pour-over, espresso, or specialty preparation</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Rare Tea Selection</h3>
+              <span class="dish-price">&euro; 7</span>
+            </div>
+            <p class="dish-desc">Curated loose leaf teas: Darjeeling First Flush, Gyokuro, Rose Oolong</p>
+          </article>
+          <article class="menu-item reveal-section">
+            <div class="menu-item-header">
+              <h3 class="dish-name">Mocktail of the Season</h3>
+              <span class="dish-price">&euro; 12</span>
+            </div>
+            <p class="dish-desc">Chef's non-alcoholic creation &mdash; changes monthly with seasonal botanicals</p>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       WINE SECTION
+  ============================================= -->
+  <section id="wine" class="section wine-section" aria-label="Wine">
+    <div class="wine-bg">
+      <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1600&auto=format&fit=crop&q=80" alt="Wine cellar" class="wine-bg-img" loading="lazy" />
+      <div class="wine-overlay"></div>
+    </div>
+    <div class="container wine-container">
+      <div class="section-header section-header--light reveal-section">
+        <span class="section-label">The Cellar</span>
+        <h2 class="section-title">Our Wine Collection</h2>
+        <p class="section-subtitle">Over 400 labels curated from the world's most celebrated appellations.</p>
+      </div>
+      <div class="wine-columns reveal-section">
+
+        <div class="wine-col">
+          <h3 class="wine-col-title">Red Wines</h3>
+          <ul class="wine-list">
+            <li><span class="wine-name">Ch&acirc;teau P&eacute;trus 2012</span><span class="wine-region">Pomerol, France</span><span class="wine-price">&euro; 1,200</span></li>
+            <li><span class="wine-name">Sassicaia 2017</span><span class="wine-region">Bolgheri, Italy</span><span class="wine-price">&euro; 320</span></li>
+            <li><span class="wine-name">Penfolds Grange 2015</span><span class="wine-region">South Australia</span><span class="wine-price">&euro; 580</span></li>
+            <li><span class="wine-name">Vega Sicilia &Uacute;nico 2010</span><span class="wine-region">Ribera del Duero, Spain</span><span class="wine-price">&euro; 420</span></li>
+            <li><span class="wine-name">Gevrey-Chambertin Grand Cru</span><span class="wine-region">Burgundy, France</span><span class="wine-price">&euro; 260</span></li>
+          </ul>
+        </div>
+
+        <div class="wine-col">
+          <h3 class="wine-col-title">White Wines</h3>
+          <ul class="wine-list">
+            <li><span class="wine-name">B&acirc;tard-Montrachet 2018</span><span class="wine-region">Burgundy, France</span><span class="wine-price">&euro; 380</span></li>
+            <li><span class="wine-name">Chablis Grand Cru 2020</span><span class="wine-region">Chablis, France</span><span class="wine-price">&euro; 140</span></li>
+            <li><span class="wine-name">Gr&uuml;ner Veltliner Smaragd</span><span class="wine-region">Wachau, Austria</span><span class="wine-price">&euro; 110</span></li>
+            <li><span class="wine-name">Condrieu Viognier 2021</span><span class="wine-region">Rh&ocirc;ne Valley, France</span><span class="wine-price">&euro; 160</span></li>
+            <li><span class="wine-name">Sancerre Blanc 2021</span><span class="wine-region">Loire Valley, France</span><span class="wine-price">&euro; 90</span></li>
+          </ul>
+        </div>
+
+        <div class="wine-col">
+          <h3 class="wine-col-title">Champagne &amp; Sparkling</h3>
+          <ul class="wine-list">
+            <li><span class="wine-name">Krug Clos du Mesnil 2008</span><span class="wine-region">Champagne, France</span><span class="wine-price">&euro; 950</span></li>
+            <li><span class="wine-name">Dom P&eacute;rignon Vintage 2013</span><span class="wine-region">Champagne, France</span><span class="wine-price">&euro; 320</span></li>
+            <li><span class="wine-name">Billecart-Salmon Brut Ros&eacute;</span><span class="wine-region">Champagne, France</span><span class="wine-price">&euro; 160</span></li>
+            <li><span class="wine-name">Schramsberg Blanc de Blancs</span><span class="wine-region">Napa Valley, USA</span><span class="wine-price">&euro; 120</span></li>
+            <li><span class="wine-name">Ferrari Perl&eacute; Ros&eacute; 2018</span><span class="wine-region">Trento, Italy</span><span class="wine-price">&euro; 95</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       GALLERY
+  ============================================= -->
+  <section id="gallery" class="section gallery-section" aria-label="Gallery">
+    <div class="container">
+      <div class="section-header reveal-section">
+        <span class="section-label">The Atmosphere</span>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">Glimpses into the world of Fero.</p>
+      </div>
+
+      <div class="gallery-grid reveal-section">
+        <div class="gallery-item gallery-item--large" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&auto=format&fit=crop&q=80" data-caption="The Main Dining Room">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&auto=format&fit=crop&q=80" alt="Fero main dining room" loading="lazy" />
+          <div class="gallery-overlay"><span>&#43;</span></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&auto=format&fit=crop&q=80" data-caption="Culinary Artistry">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80" alt="Gourmet dish" loading="lazy" />
+          <div class="gallery-overlay"><span>&#43;</span></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1200&auto=format&fit=crop&q=80" data-caption="The Chef at Work">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&auto=format&fit=crop&q=80" alt="Chef preparation" loading="lazy" />
+          <div class="gallery-overlay"><span>&#43;</span></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&auto=format&fit=crop&q=80" data-caption="Evening Ambiance">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&auto=format&fit=crop&q=80" alt="Dining atmosphere" loading="lazy" />
+          <div class="gallery-overlay"><span>&#43;</span></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&auto=format&fit=crop&q=80" data-caption="The Wine Cellar">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&auto=format&fit=crop&q=80" alt="Wine selection" loading="lazy" />
+          <div class="gallery-overlay"><span>&#43;</span></div>
+        </div>
+        <div class="gallery-item gallery-item--large" data-src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1200&auto=format&fit=crop&q=80" data-caption="A Celebration of Flavour">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=800&auto=format&fit=crop&q=80" alt="Gourmet plating" loading="lazy" />
+          <div class="gallery-overlay"><span>&#43;</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
+      <div class="lightbox-inner">
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8592;</button>
+        <div class="lightbox-img-wrap">
+          <img src="" alt="" id="lightboxImg" />
+          <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next image">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ABOUT SECTION
+  ============================================= -->
+  <section id="about" class="section about-section" aria-label="About Fero">
+    <div class="container about-grid">
+
+      <div class="about-image reveal-section">
+        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=900&auto=format&fit=crop&q=80" alt="Executive Chef at Fero" loading="lazy" />
+        <div class="about-image-caption">
+          <span>Executive Chef</span>
+          <strong>[ Chef Name ]</strong>
+        </div>
+      </div>
+
+      <div class="about-content reveal-section">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title about-title">A Vision of Culinary Excellence</h2>
+
+        <div class="about-text">
+          <p>[ Your restaurant story goes here. Tell guests about the founding of Fero, what inspired its creation, and the vision behind it. This is where you connect emotionally with your guests before they even arrive. ]</p>
+          <p>[ Describe your philosophy &mdash; your relationship with ingredients, producers, sustainability, and the wider culinary world. What makes Fero different from every other fine dining restaurant? ]</p>
+        </div>
+
+        <div class="about-philosophy">
+          <div class="philosophy-item">
+            <span class="philosophy-icon">&#10022;</span>
+            <div>
+              <strong>The Philosophy</strong>
+              <p>[ Your culinary philosophy in one or two sentences. ]</p>
+            </div>
+          </div>
+          <div class="philosophy-item">
+            <span class="philosophy-icon">&#10022;</span>
+            <div>
+              <strong>The Provenance</strong>
+              <p>[ Your commitment to sourcing &mdash; local farmers, sustainable fishing, artisan producers. ]</p>
+            </div>
+          </div>
+          <div class="philosophy-item">
+            <span class="philosophy-icon">&#10022;</span>
+            <div>
+              <strong>The Experience</strong>
+              <p>[ What guests can expect from an evening at Fero &mdash; from welcome to farewell. ]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       RESERVATIONS
+  ============================================= -->
+  <section id="reservations" class="section reservation-section" aria-label="Online Reservation">
+    <div class="reservation-bg">
+      <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1600&auto=format&fit=crop&q=80" alt="Elegant table setting" loading="lazy" />
+      <div class="reservation-overlay"></div>
+    </div>
+    <div class="container reservation-container">
+      <div class="section-header section-header--light reveal-section">
+        <span class="section-label">Join Us</span>
+        <h2 class="section-title">Reserve a Table</h2>
+        <p class="section-subtitle">Select your preferred evening. We look forward to welcoming you.</p>
+      </div>
+
+      <div class="reservation-form-wrap reveal-section">
+        <form class="reservation-form" id="reservationForm" novalidate aria-label="Reservation form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resDate">Date</label>
+              <input type="date" id="resDate" name="date" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="resGuests">Number of Guests</label>
+              <select id="resGuests" name="guests" required aria-required="true">
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8 Guests</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label>Available Time Slots</label>
+            <div class="timeslots" id="timeslots" role="group" aria-label="Available time slots">
+              <!-- Populated by script.js -->
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resName">Full Name</label>
+              <input type="text" id="resName" name="name" placeholder="Your full name" required aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="resEmail">Email Address</label>
+              <input type="email" id="resEmail" name="email" placeholder="your@email.com" required aria-required="true" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resPhone">Phone Number</label>
+              <input type="tel" id="resPhone" name="phone" placeholder="+49 000 000 0000" />
+            </div>
+            <div class="form-group">
+              <label for="resSpecial">Special Requests</label>
+              <input type="text" id="resSpecial" name="special" placeholder="Dietary needs, celebrations, etc." />
+            </div>
+          </div>
+
+          <div class="form-group form-group--full">
+            <button type="submit" class="btn btn-gold btn-full">Confirm Reservation</button>
+          </div>
+
+          <div class="reservation-success" id="reservationSuccess" hidden>
+            <span class="success-icon">&#10022;</span>
+            <h3>Reservation Confirmed</h3>
+            <p id="reservationSummary"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PRIVATE EVENTS
+  ============================================= -->
+  <section id="events" class="section events-section" aria-label="Private Events">
+    <div class="container events-grid">
+
+      <div class="events-content reveal-section">
+        <span class="section-label">Exclusive Occasions</span>
+        <h2 class="section-title">Private Events</h2>
+        <p class="events-intro">[ Describe your private dining offering here. Fero is proud to host intimate gatherings, corporate dinners, and landmark celebrations in an atmosphere of total discretion and elegance. ]</p>
+
+        <div class="events-types">
+          <div class="event-type reveal-section">
+            <h4>Private Dining</h4>
+            <p>[ Our private dining room accommodates up to XX guests in complete privacy. A dedicated sommelier and personal menu consultation are included. ]</p>
+          </div>
+          <div class="event-type reveal-section">
+            <h4>Corporate Events</h4>
+            <p>[ Impress clients and reward teams with an extraordinary culinary experience. We offer bespoke packages for business dinners and corporate entertainment. ]</p>
+          </div>
+          <div class="event-type reveal-section">
+            <h4>Special Celebrations</h4>
+            <p>[ Birthdays, anniversaries, proposals &mdash; let our team curate every detail of your most cherished moments. ]</p>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-outline">Enquire About Events</a>
+      </div>
+
+      <div class="events-image reveal-section">
+        <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=900&auto=format&fit=crop&q=80" alt="Private dining at Fero" loading="lazy" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       TAKEAWAY
+  ============================================= -->
+  <section id="takeaway" class="section takeaway-section" aria-label="Takeaway">
+    <div class="container takeaway-grid">
+
+      <div class="takeaway-image reveal-section">
+        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=900&auto=format&fit=crop&q=80" alt="Gourmet takeaway packaging" loading="lazy" />
+      </div>
+
+      <div class="takeaway-content reveal-section">
+        <span class="section-label">Fero To Go</span>
+        <h2 class="section-title">Takeaway</h2>
+        <p>[ Bring the Fero experience home. Our takeaway service offers a curated selection of signature dishes, beautifully packaged and ready to enjoy. Available Thursday through Sunday. ]</p>
+
+        <div class="takeaway-steps">
+          <div class="takeaway-step">
+            <span class="step-num">01</span>
+            <div>
+              <strong>Call to Order</strong>
+              <p>Phone us at least 2 hours in advance.</p>
+              <a href="tel:+49000000000" class="takeaway-phone">+49 (0) 000 000 0000</a>
+            </div>
+          </div>
+          <div class="takeaway-step">
+            <span class="step-num">02</span>
+            <div>
+              <strong>Collect</strong>
+              <p>Pick up at our dedicated takeaway entrance on [ Street Name ].</p>
+            </div>
+          </div>
+          <div class="takeaway-step">
+            <span class="step-num">03</span>
+            <div>
+              <strong>Enjoy</strong>
+              <p>Reheat instructions included. Serve within 30 minutes for best results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       TESTIMONIALS
+  ============================================= -->
+  <section class="section testimonials-section" aria-label="Testimonials">
+    <div class="container">
+      <div class="section-header reveal-section">
+        <span class="section-label">Voices of Our Guests</span>
+        <h2 class="section-title">What They Say</h2>
+      </div>
+
+      <div class="testimonials-slider reveal-section" role="region" aria-label="Guest testimonials">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <blockquote class="testimonial">
+            <p class="testimonial-text">"An extraordinary evening. Each dish told a story &mdash; the wagyu was unlike anything I have tasted in Germany. Fero is in a league of its own."</p>
+            <footer class="testimonial-author">
+              <strong>Alexandra M.</strong>
+              <span>Berlin &middot; June 2024</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial-text">"The sommelier's wine pairing was flawless. From the amuse-bouche to the petit fours, every moment was considered and perfectly executed."</p>
+            <footer class="testimonial-author">
+              <strong>Thomas B.</strong>
+              <span>Munich &middot; September 2024</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial-text">"We celebrated our anniversary at Fero and it exceeded every expectation. The service is warm but never intrusive &mdash; the definition of understated luxury."</p>
+            <footer class="testimonial-author">
+              <strong>Isabelle &amp; Marc D.</strong>
+              <span>Hamburg &middot; December 2024</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial-text">"I travel for work across Europe and dine in some of the world's finest restaurants. Fero stands among the very best. A destination unto itself."</p>
+            <footer class="testimonial-author">
+              <strong>James H.</strong>
+              <span>London &middot; February 2025</span>
+            </footer>
+          </blockquote>
+
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="testi-btn" id="testiBtnPrev" aria-label="Previous testimonial">&#8592;</button>
+          <div class="testi-dots" id="testiDots" role="tablist" aria-label="Testimonial navigation"></div>
+          <button class="testi-btn" id="testiBtnNext" aria-label="Next testimonial">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CONTACT / LOCATION
+  ============================================= -->
+  <section id="contact" class="section contact-section" aria-label="Contact and Location">
+    <div class="container contact-grid">
+
+      <div class="contact-info reveal-section">
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">Contact &amp; Location</h2>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-icon">&#128205;</span>
+            <div>
+              <strong>Address</strong>
+              <p>[ Street Name ] [ Number ]<br />[ Postal Code ] [ City ], Germany</p>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">&#128222;</span>
+            <div>
+              <strong>Telephone</strong>
+              <p><a href="tel:+49000000000">+49 (0) 000 000 0000</a></p>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">&#9993;</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:info@fero-restaurant.de">info@fero-restaurant.de</a></p>
+            </div>
+          </li>
+          <li>
+            <span class="contact-icon">&#128336;</span>
+            <div>
+              <strong>Opening Hours</strong>
+              <p>
+                Tuesday &ndash; Thursday: 18:00 &ndash; 22:30<br />
+                Friday &ndash; Saturday: 12:00 &ndash; 14:30 &amp; 18:00 &ndash; 23:00<br />
+                Sunday: 12:00 &ndash; 15:00<br />
+                Monday: Closed
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-map reveal-section">
+        <!-- Replace src below with your real Google Maps embed URL -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4563937577584!2d13.388860076892!3d52.517037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMxJzAxLjMiTiAxM8KwMjMnMjAuMSJF!5e0!3m2!1sen!2sde!4v1234567890"
+          width="100%"
+          height="420"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Fero Restaurant location map"
+          aria-label="Google Maps showing Fero Restaurant location"
+        ></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       SOCIAL MEDIA / INSTAGRAM GRID
+  ============================================= -->
+  <section class="section social-section" aria-label="Social Media">
+    <div class="container">
+      <div class="section-header reveal-section">
+        <span class="section-label">Stay Connected</span>
+        <h2 class="section-title">Follow Our Story</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Fero on Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @fero_restaurant
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow Fero on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            Fero Restaurant
+          </a>
+        </div>
+      </div>
+
+      <div class="insta-grid reveal-section">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta-item" aria-label="Instagram post 1">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=400&auto=format&fit=crop&q=80" alt="Gourmet dish" loading="lazy" />
+          <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta-item" aria-label="Instagram post 2">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&auto=format&fit=crop&q=80" alt="Dining room" loading="lazy" />
+          <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta-item" aria-label="Instagram post 3">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&auto=format&fit=crop&q=80" alt="Food" loading="lazy" />
+          <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta-item" aria-label="Instagram post 4">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&auto=format&fit=crop&q=80" alt="Wine" loading="lazy" />
+          <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta-item" aria-label="Instagram post 5">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&auto=format&fit=crop&q=80" alt="Chef" loading="lazy" />
+          <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="insta-item" aria-label="Instagram post 6">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=400&auto=format&fit=crop&q=80" alt="Chef portrait" loading="lazy" />
+          <div class="insta-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none"/></svg></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-top-grid">
+
+        <div class="footer-brand">
+          <span class="footer-logo">FERO</span>
+          <p>International Fine Dining<br />Germany</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#wine">Wine</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Experience</h4>
+          <ul>
+            <li><a href="#events">Private Events</a></li>
+            <li><a href="#takeaway">Takeaway</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Gift Vouchers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Informed</h4>
+          <p>Receive seasonal menus, event invitations, and exclusive updates.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email address" required aria-required="true" aria-label="Email for newsletter" />
+            <button type="submit" aria-label="Subscribe">&#8594;</button>
+          </form>
+          <p class="newsletter-success" id="newsletterSuccess" hidden>Thank you &mdash; you're subscribed.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="footerYear"></span> Fero Restaurant &middot; All rights reserved</p>
+        <nav aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Imprint</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
